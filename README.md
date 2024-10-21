@@ -1,3 +1,77 @@
 # Studio-per-la-realizzazione-di-Recommender-Systems-analisi-e-valutazione-di-modelli-di-Text-Mining
-bachelor thesis, Study for the realization of Recommender Systems: analysis and evaluation of Text Mining models
-Nowadays we find ourselves making decisions countless times, even without realizing it. What do I order at the restaurant? What book should I start reading? What movie to watch? We answer dozens of questions like this every day of our lives; especially in the context of the digital age in which we live, the abundance of information and choices has become a predominant feature of our daily lives. In the past we would have relied on the help of a friend or relative, nowadays recommender systems are increasingly popular, which, through algorithms, are able to recommend anything according to our tastes, allowing us to have a choice wider than the proposals of our acquaintances. However, it is important to point out here that, as we will see later, even recommendation systems have their limits, so probably (and hopefully) in certain areas they will never know us as well as our friends and relatives and will not be able to never replace them completely. This thesis focuses on the ambitious goal of developing a high-quality recommendation system, aimed at assisting people in the decision-making process. The heart of this research work lies in the analysis and evaluation of different algorithms, with the aim of identifying the most suitable ones to provide relevant and personalized recommendations. The ultimate goal is to develop a system that can help individuals make informed and conscious decisions. This thesis aims to address a number of complex challenges, ranging from the selection and adaptation of algorithms to the collection and analysis of relevant data. The work will include an in-depth literature review, a critical analysis of existing algorithms and the implementation of innovative solutions to achieve the set goal. In fact, an in-depth analysis of recommender systems will be conducted, focusing on the different existing typologies. In particular, the Content Based Recommender System will be explored in depth, examining similarity metrics as fundamental evaluation tools. The investigation will focus on two text representation models: the Count Vectorizer, which captures the frequency of words, and the TF-IDF, which evaluates the importance of a word based on its context. The Bag of Words model, Word2Vec and BERT will also be explored, analyzing how these advanced embedding methods address the complexity of semantic and syntactic relationships between words. In the practical application of the models, we will proceed with an in-depth analysis of the dataset used, implementing a rigorous preprocessing process to guarantee accurate and reliable results. Finally, the results obtained from each model will be discussed, thus contributing to the in-depth understanding of the performance of these approaches in recommender systems. In light of the growing importance of recommender systems in our society, this research has the potential to make a contribution to the field, improving people's ability to make informed and conscious decisions in an increasingly complex and interconnected world. ​
+
+This project implements various text mining models to develop a content-based movie recommender system. The goal is to compare and evaluate different approaches to build a high-quality system capable of assisting users in movie selection by providing personalized recommendations.
+
+# Table of Contents:
+
+Overview
+
+Data
+
+Models
+
+Count Vectorizer
+
+TF-IDF
+
+Bag of Words
+
+Word2Vec
+
+BERT
+
+Results
+
+# Overview:
+
+This repository contains the implementation of a content-based recommender system using various text mining and natural language processing (NLP) models. The recommender system analyzes movie descriptions and metadata to recommend similar films based on user input. The models implemented include:
+
+Count Vectorizer
+
+TF-IDF (Term Frequency-Inverse Document Frequency)
+
+Bag of Words
+
+Word2Vec
+
+BERT (Bidirectional Encoder Representations from Transformers)
+
+The main objective is to assess and compare the performance of each model in generating meaningful and personalized movie recommendations.
+
+Data:
+
+The dataset used in this project is sourced from TMDb (The Movie Database), containing 5000 of the top-rated movies. It includes movie metadata such as title, description, genres, and crew.
+
+# Models:
+
+Count Vectorizer:
+
+Converts the text into a matrix of token counts, helping to find similarity between movies based on word frequency.
+
+TF-IDF:
+
+Calculates the importance of words by considering their frequency across the entire corpus, leading to more refined movie recommendations.
+
+Bag of Words:
+
+Represents movie descriptions as a collection of words, ignoring grammar and word order, but capturing term frequency.
+
+Word2Vec:
+
+Generates word embeddings that capture semantic meaning, allowing for more sophisticated recommendations based on the context of words in the description.
+
+BERT:
+
+A transformer-based model that deeply understands context, used for generating powerful sentence embeddings to find movie similarities.
+
+# Results:
+
+Each model was tested to generate recommendations for the movie The Lord of the Rings: The Fellowship of the Ring. Here are the key findings:
+
+Count Vectorizer: Captured genre-specific recommendations well but struggled with nuanced context.
+
+TF-IDF: Provided context-aware suggestions with better relevance to movie plots.
+
+Word2Vec: Successfully captured semantic similarity between films, offering high-quality recommendations.
+
+BERT: Achieved the best results, understanding the deep context and generating highly accurate and personalized recommendations.
